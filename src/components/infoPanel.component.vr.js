@@ -33,7 +33,7 @@ export default class InfoPanel extends React.Component {
                   onInput={this.openURL('https://github.com/craigkj312/node-react-vr-starter')}
                   onEnter={() => this.setState({firstLink: styles.hover})}
                   onExit={() => this.setState({firstLink: styles.hyperlink})}> Node React VR Starter App</Text>
-            <Text style={styles.info}>! To get started modifying your virtual world check out the</Text>
+            <Text style={styles.info}>! To get started creating your virtual world check out the</Text>
             <Text style={this.state.secondLink} 
                   onInput={this.openURL('https://facebook.github.io/react-vr/docs/getting-started.html')}
                   onEnter={() => this.setState({secondLink: styles.hover})}
