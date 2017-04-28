@@ -1,5 +1,8 @@
-# react-vr-starter
-Getting a basic react-vr application on Bluemix.
+# Bluemix React VR Starter
+
+## WORK IN PROGRESS
+
+Getting a basic React VR application on Bluemix.
 
 ## Running
 

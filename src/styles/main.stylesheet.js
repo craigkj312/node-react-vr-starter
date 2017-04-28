@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
 
   hyperlink: {
       color: '#eeeeee'
-  }
+  },
 
   hover: {
       color: '#5596e6'
