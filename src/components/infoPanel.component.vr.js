@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppRegistry, asset, StyleSheet, Pano, Text, View, Image, Linking } from 'react-vr';
+import { AppRegistry, asset, StyleSheet, Pano, Text, View, Image, VrButton, Linking } from 'react-vr';
 
 import styles from '../styles/main.stylesheet';
 
@@ -7,6 +7,9 @@ export default class InfoPanel extends React.Component {
 
   constructor(props) {
         super(props)
+
+        this.state = {firstLink: styles.hyperlink,
+                      secondLink: styles.hyperlink}
   }
 
   openURL(url) {
@@ -26,9 +29,15 @@ export default class InfoPanel extends React.Component {
           </Text>
           <Text style={styles.info}>
             Thanks for creating a 
-            <Text style={styles.hyperlink} onInput={this.openURL('https://github.com/craigkj312/node-react-vr-starter')}> Node React VR Starter App</Text>
+            <Text style={this.state.firstLink} 
+                  onInput={this.openURL('https://github.com/craigkj312/node-react-vr-starter')}
+                  onEnter={() => this.setState({firstLink: styles.hover})}
+                  onExit={() => this.setState({firstLink: styles.hyperlink})}> Node React VR Starter App</Text>
             <Text style={styles.info}>! To get started modifying your virtual world check out the</Text>
-            <Text style={styles.hyperlink} onInput={this.openURL('https://facebook.github.io/react-vr/docs/getting-started.html')}> React VR Documentation</Text>
+            <Text style={this.state.secondLink} 
+                  onInput={this.openURL('https://facebook.github.io/react-vr/docs/getting-started.html')}
+                  onEnter={() => this.setState({secondLink: styles.hover})}
+                  onExit={() => this.setState({secondLink: styles.hyperlink})}> React VR Documentation</Text>
             <Text style={styles.info}>.</Text>
           </Text>
         </View>
