@@ -1,0 +1,6 @@
+
+---
+applications:
+ - name: ReactVRStarter
+   random-route: true
+   memory: 256M
