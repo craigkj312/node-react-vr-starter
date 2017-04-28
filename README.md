@@ -79,7 +79,7 @@ Before deploying to Bluemix you'll need to make some modifications to the [manif
    memory: 128M
  ```
 
-The [manifest.yml](mainfest.yml) file has a lot of different configuration options. One of the most important is the ability to set a specific route. If you'd like to learn how you can check our documentation [here](https://console.bluemix.net/docs/manageapps/depapps.html#appmanifest).
+The [manifest.yml](mainfest.yml) file has a lot of different configuration options. One of the most important is the ability to set a specific route. If you'd like to learn how, you can check our documentation [here](https://console.bluemix.net/docs/manageapps/depapps.html#appmanifest).
 
 Next we'll be using the Cloud Foundary CLI to push our application.
 
@@ -118,5 +118,5 @@ Ok, maybe you want to make a few changes to the app first. In that case I would 
 If you have more questions about Bluemix, or would like to know what services can be added to your app, you can check out the [Bluemix Documentation](https://console.bluemix.net/docs/).
 
 # License
-This library is licensed under Apache 2.0. Full license text is
+This project is licensed under Apache 2.0. Full license text is
 available in [LICENSE](LICENSE).
