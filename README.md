@@ -6,6 +6,12 @@ This project is designed to get you up and running quickly with a light-weight R
   <img src="readme_img/example-run.gif" width="400">
 </p>
 
+If you want to save the tutorial for later (or already know what you're doing and want it hosted quickly) You can use this handy button to do a quick deploy.
+
+<p align="center">
+    <a href="https://bluemix.net/deploy?repository=https://github.com/craigkj312/node-react-vr-starter&branch=master"><img src="https://bluemix.net/deploy/button.png" alt="Deploy to Bluemix" target="_blank"></a>
+</p>
+
 ## Before You Begin
 
 Things you'll need:
