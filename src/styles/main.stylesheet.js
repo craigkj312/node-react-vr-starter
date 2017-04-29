@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     textAlign: 'center',
     textAlignVertical: 'center',
-    transform: [{translate: [0, 0, -150]}],
+    transform: [{translate: [0, 0, -130]}],
     width: 150,
     backgroundColor: '#323232'
   },
