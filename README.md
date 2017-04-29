@@ -113,7 +113,7 @@ This can take a minute. If there is an error in the deployment process you can u
 
 That's it! You now have a Virtual Reality application running live on Bluemix. Start sharing the link with your friends!
 
-Ok, maybe you want to make a few changes to the app first. In that case I would recommend checking out the [React VR Documentation](https://facebook.github.io/react-vr/docs/getting-started.html). It has a lot of great content and should help you get up to speed developing your app. If you aren't familiar with common React programming patterns, you can also check out the [React Documentation].
+Ok, maybe you want to make a few changes to the app first. In that case I would recommend checking out the [React VR Documentation](https://facebook.github.io/react-vr/docs/getting-started.html). It has a lot of great content and should help you get up to speed developing your app. If you aren't familiar with common React programming patterns, you can also check out the [React Documentation](https://facebook.github.io/react/).
 
 If you have more questions about Bluemix, or would like to know what services can be added to your app, you can check out the [Bluemix Documentation](https://console.bluemix.net/docs/).
 
