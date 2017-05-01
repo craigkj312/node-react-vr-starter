@@ -1,0 +1,6 @@
+node_modules
+npm-debug.log
+.cfignore
+manifest.yml
+readme_img
+src
