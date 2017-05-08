@@ -20,7 +20,8 @@ If you want to save the tutorial for later (or already know what you're doing an
 4. [Deployment](#4-deployment)
    1. [Cloud Foundry Deployment](#4a-cloud-foundry-deployment)
    2. [Container Deployment](#4b-container-deployment)
-5. [Next Steps](#5-next-steps)
+5. [Browser Support](#5-browser-support)
+6. [Next Steps](#6-next-steps)
 
 ## 1. Before You Begin
 
@@ -157,7 +158,27 @@ docker ps
 
 For more information about Docker containers check out the [Docker Documentaion](https://docs.docker.com/get-started/)
 
-## 5. Next Steps
+## 5. Browser Support
+
+WebVR is still in its infancy and right now only a few browsers give full VR support. In most browsers the webpage will act like an interactive 360 video where you can "turn" by dragging the mouse, but if you want to see your content inside a VR headset you'll need to make sure you're using a webVR supported browser. If you're using a compliant browser you'll see a little "View in VR" button in the bottom left corner of the view. 
+
+Here are a few recommendations for browsers:
+
+### Desktop:
+* [Firefox Nightly](https://www.mozilla.org/en-US/firefox/channel/desktop/)
+* [Google Chrome](https://www.google.com/chrome/)
+  * Note: You'll need to enable webVR support by going to `chrome://flags/#enable-webvr`
+
+### Cardboard and Daydream:
+* [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome&hl=en)
+  * Note: You'll need to enable webVR support by going to `chrome://flags/#enable-webvr`
+
+### GearVR
+* [Carmel](https://www.oculus.com/experiences/gear-vr/1290985657630933/)
+
+For more information about webVR browsers you can check support status [here](https://webvr.rocks/).
+
+## 6. Next Steps
 
 That's it! You now have a Virtual Reality application running live on Bluemix (or somewhere of your choosing). Start sharing the link with your friends!
 
