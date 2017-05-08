@@ -68,7 +68,7 @@ Run the app.
 
 View your app at: http://localhost:3000
 
-## 3. Deploy the App
+## 3a. Deploy the App
 
 Before deploying to Bluemix you'll need to make some modifications to the [manifest.yml](mainfest.yml) file. Open it up and change the `name` field to be whatever you wish to call your new app.
  
@@ -96,7 +96,6 @@ Replace the *API-endpoint* in the command with an API endpoint from the followin
   ```
 
 Login to your Bluemix account.
-
   ```
   cf login
   ```
@@ -109,14 +108,48 @@ From within the *node-react-vr-starter* directory push your app to Bluemix.
 
 This can take a minute. If there is an error in the deployment process you can use the command `cf logs <Your-App-Name> --recent` to troubleshoot.
 
+## 3b. Container Deployment
+
+This repository also contains a [Dockerfile](Dockerfile) that allows you to build a Docker container image. This container image can be uploaded to a platform of your choice by following one of these docs:
+
+* [Bluemix](https://console.ng.bluemix.net/docs/containers/container_single_ui.html#container_gettingstarted_tutorial)
+* [AWS](https://aws.amazon.com/getting-started/tutorials/deploy-docker-containers/)
+* [Azure](https://docs.microsoft.com/en-us/azure/container-service/container-service-docker-swarm)
+* [Google Cloud Platform](https://cloud.google.com/container-engine/docs/)
+
+If you just want to run in a container locally you can follow these steps:
+
+First download and install the [Docker Tools](https://docs.docker.com/engine/installation/). Once you have that done you'll want to run the following command in the same directory as the [Dockerfile](Dockerfile).
+```
+docker build -t <your username>/react-vr-app .
+```
+
+This will build a docker image that will live locally. To check your images you can use:
+```
+docker images
+```
+
+Assuming you see your newly built image in that list you can then use the following command to run your container locally.
+```
+docker run -p 3000:3000 -d <your username>/react-vr-app
+```
+
+Now you should be able to view your app at: http://localhost:3000
+
+You can also verify that your container is running with the command:
+```
+docker ps
+```
+
+For more information about Docker containers check out the [Docker Documentaion](https://docs.docker.com/get-started/)
+
 ## 4. Next Steps
 
-That's it! You now have a Virtual Reality application running live on Bluemix. Start sharing the link with your friends!
+That's it! You now have a Virtual Reality application running live on Bluemix (or somewhere of your choosing). Start sharing the link with your friends!
 
 Ok, maybe you want to make a few changes to the app first. In that case I would recommend checking out the [React VR Documentation](https://facebook.github.io/react-vr/docs/getting-started.html). It has a lot of great content and should help you get up to speed developing your app. If you aren't familiar with common React programming patterns, you can also check out the [React Documentation](https://facebook.github.io/react/).
 
 If you have more questions about Bluemix, or would like to know what services can be added to your app, you can check out the [Bluemix Documentation](https://console.bluemix.net/docs/).
 
 # License
-This project is licensed under Apache 2.0. Full license text is
-available in [LICENSE](LICENSE).
+This project is licensed under Apache 2.0. Full license text is available in [LICENSE](LICENSE).
