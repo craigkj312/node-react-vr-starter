@@ -26,7 +26,7 @@ If you want to save the tutorial for later (or already know what you're doing an
 ## 1. Before You Begin
 
 Things you'll need:
-* [Bluemix account](https://console.ng.bluemix.net/registration/)
+* [Bluemix account](http://ibm.biz/Bdimr6)
 * [Cloud Foundry CLI](https://github.com/cloudfoundry/cli#downloads)
 * [Node](https://nodejs.org/en/)
 
