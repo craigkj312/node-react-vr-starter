@@ -12,14 +12,24 @@ If you want to save the tutorial for later (or already know what you're doing an
     <a href="https://bluemix.net/deploy?repository=https://github.com/craigkj312/node-react-vr-starter&branch=master"><img src="https://bluemix.net/deploy/button.png" alt="Deploy to Bluemix" target="_blank"></a>
 </p>
 
-## Before You Begin
+# Table of Contents
+
+1. [Before you begin](#1-before-you-begin)
+2. [Clone the App](#2-clone-the-app)
+3. [Run the App](#3-run-the-app)
+4. [Deployment](#4-deployment)
+   1. [Cloud Foundry Deployment](#4a-cloud-foundry-deployment)
+   2. [Container Deployment](#4b-container-deployment)
+5. [Next Steps](#5-next-steps)
+
+## 1. Before You Begin
 
 Things you'll need:
 * [Bluemix account](https://console.ng.bluemix.net/registration/)
 * [Cloud Foundry CLI](https://github.com/cloudfoundry/cli#downloads)
 * [Node](https://nodejs.org/en/)
 
-## 1. Clone the App
+## 2. Clone the App
 
 To start, clone this repository locally on your machine.
 
@@ -48,7 +58,7 @@ Now that you have the code locally you should take a moment to look through the 
 └── server.js                           // The main node server file which hosts the static content.
 ```
 
-## 2. Run the App
+## 3. Run the App
 
 Install the dependencies from the [package.json](https://docs.npmjs.com/files/package.json) file.
   ```
@@ -68,7 +78,11 @@ Run the app.
 
 View your app at: http://localhost:3000
 
-## 3a. Deploy the App
+## 4. Deployment
+
+There are a couple ways that this project is set up to be deployed. You can either upload it using Cloud Foundry, or you can build a container image with it. Choose whichever path works best for you.
+
+## 4a. Cloud Foundry Deployment
 
 Before deploying to Bluemix you'll need to make some modifications to the [manifest.yml](mainfest.yml) file. Open it up and change the `name` field to be whatever you wish to call your new app.
  
@@ -108,7 +122,7 @@ From within the *node-react-vr-starter* directory push your app to Bluemix.
 
 This can take a minute. If there is an error in the deployment process you can use the command `cf logs <Your-App-Name> --recent` to troubleshoot.
 
-## 3b. Container Deployment
+## 4b. Container Deployment
 
 This repository also contains a [Dockerfile](Dockerfile) that allows you to build a Docker container image. This container image can be uploaded to a platform of your choice by following one of these docs:
 
@@ -143,7 +157,7 @@ docker ps
 
 For more information about Docker containers check out the [Docker Documentaion](https://docs.docker.com/get-started/)
 
-## 4. Next Steps
+## 5. Next Steps
 
 That's it! You now have a Virtual Reality application running live on Bluemix (or somewhere of your choosing). Start sharing the link with your friends!
 
