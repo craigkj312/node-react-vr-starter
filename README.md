@@ -188,3 +188,8 @@ If you have more questions about Bluemix, or would like to know what services ca
 
 # License
 This project is licensed under Apache 2.0. Full license text is available in [LICENSE](LICENSE).
+
+# Acknowledgments 
+
+* [Borodar](http://www.borodar.com/) for the great skybox.
+* [Frank Rodriguez](https://dribbble.com/mudshock) for the illustration.
